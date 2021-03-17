@@ -2,7 +2,7 @@ tag:
 type: ipv4net
 help: Set an HUB tunnel address
 
-syntax:expression: exec "/opt/vyatta/sbin/valid_address $VAR(@)"
+syntax:expression: exec "/usr/bin/ipaddrcheck --is-ipv4-net $VAR(@)"
 
 comp_help:Possible completions:
   <x.x.x.x/x>           Set the IP address and prefix length
